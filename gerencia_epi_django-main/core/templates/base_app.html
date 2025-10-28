@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -109,7 +110,6 @@
       font-weight: bold;
     }
 
-    /* ===== CONTEÚDO INTERNO ===== */
     .page-content {
       background-color: #fff;
       border: 2px solid #000;
@@ -138,12 +138,13 @@
 <body>
   <aside class="sidebar">
     <div class="logo">
-      <img src="capacete.png" alt="Logo">
+      <img src="{% static 'capacete.png' %}" alt="Logo">
       <h1>Sistema de Gestão de EPIs</h1>
     </div>
     <nav class="menu">
       <a href="dashboard.html" class="active">Dashboard</a>
       <a href="colaboradores.html">Colaboradores</a>
+
       <a href="equipamentos.html">Equipamentos</a>
       <a href="emprestimos.html">Empréstimos</a>
       <a href="movimentacoes.html">Movimentações</a>
